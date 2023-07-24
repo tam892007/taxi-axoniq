@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Driver Job Demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script type="text/javascript" async="" src="app.js"></script>
+</head>
+<body>
+<section class="section">
+    <div class="container mb-2">
+        <h1 class="title">
+            Jobs
+        </h1>
+    </div>
+    <div class="container">
+        <div class="columns">
+            <div class="column has-background-white-ter m-2">
+                <h3 class="subtitle">Current Jobs</h3>
+            </div>
+        </div>
+        <div class="notification is-success" id="notification" style="visibility: hidden">
+            <button class="delete" id="notification-button"></button>
+            <p id="notification-text"></p>
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="subtitle">
+         	Bid
+        </h2>
+        <table class="table is-bordered is-striped is-fullwidth">
+            <thead>
+            <tr>
+                <th>Job ID</th>
+                <th>Status</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody id="table-body">
+            </tbody>
+        </table>
+    </div>
+</section>
+</body>

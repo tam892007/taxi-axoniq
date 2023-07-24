@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Booking Demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script type="text/javascript" async="" src="app.js"></script>
+</head>
+<body>
+<section class="section">
+    <div class="container mb-2">
+        <h1 class="title">
+            Booking Demo
+        </h1>
+    </div>
+    <div class="container">
+        <div class="columns">
+            <div class="column has-background-white-ter m-2">
+                <h3 class="subtitle">Book A Ride</h3>
+                <label class="label">Pick Up<input class="input" id="pick-up-input" type="text" placeholder="Sin Ming Ave 1"></label>
+                <label class="label">Drop Off<input class="input" id="drop-off-input" type="text" placeholder="Bugis Junction"></label>
+                <button class="button" disabled id="book-button">Book</button>
+            </div>
+        </div>
+        <div class="notification is-success" id="notification" style="visibility: hidden">
+            <button class="delete" id="notification-button"></button>
+            <p id="notification-text"></p>
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="subtitle">
+            Latest Bookings
+        </h2>
+        <table class="table is-bordered is-striped is-fullwidth">
+            <thead>
+            <tr>
+                <th>Booking ID</th>
+                <th>Pick Up</th>
+                <th>Drop Off</th>
+                <th>Status</th>
+                <th>Driver</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody id="table-body">
+            </tbody>
+        </table>
+    </div>
+</section>
+</body>
